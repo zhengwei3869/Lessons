@@ -10,6 +10,23 @@ class QmyDialog(QDialog):
       self.ui = Ui_Dialog()  # 创建UI对象
       self.ui.setupUi(self)  # 构造UI
 
+   def on_btnClear_clicked(self):
+      self.ui.textEdit.clear()
+
+   def on_chkBoxBold_toggled(self, checked):
+      font = self.ui.textEdit.font()
+      font.setBold(checked)  # 参数checked表示勾选状态
+      self.ui.textEdit.setFont(font)
+
+   def on_chkBoxUnder_toggled(self, checked):
+      font = self.ui.textEdit.font()
+      font.setUnderline(checked)
+      self.ui.textEdit.setFont(font)
+
+   def on_chkBoxItalic_toggled(self, checked):
+      font = self.ui.textEdit.font()
+      font.setItalic(checked)
+      self.ui.textEdit.setFont(font)
 
 if __name__ == "__main__":  # 用于当前窗体测试
    app = QApplication(sys.argv)  # 创建GUI应用程序
