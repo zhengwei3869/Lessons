@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/512-2.ico</file>
+        <file>images/ice.ico</file>
+        <file>images/icon.ico</file>
+        <file>images/weld.ico</file>
+    </qresource>
+</RCC>

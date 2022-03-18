@@ -19,11 +19,11 @@ class Human(QObject):
       self.ageChanged.emit(self.__age)  # 发射int参数信号
       if age <= 18:
          ageInfo = "你是 少年"
-      elif (18 < age <= 35):
+      elif 18 < age <= 35:
          ageInfo = "你是 年轻人"
-      elif (35 < age <= 55):
+      elif 35 < age <= 55:
          ageInfo = "你是 中年人"
-      elif (55 < age <= 80):
+      elif 55 < age <= 80:
          ageInfo = "您是 老人"
       else:
          ageInfo = "您是 寿星啊"
